@@ -142,14 +142,14 @@
   }
   function calculate() {
     var v = document.getElementById("value").value;
-    let px1366 = (v / 100) * 71;
+    let px1366 = (v / 100) * 71.1458;
     let px1536 = (v / 100) * 80;
     let rem1366 = px1366 / 16;
     let rem1536 = px1536 / 16;
 
-    document.getElementById("p1").innerHTML = px1366.toFixed(2);
-    document.getElementById("p2").innerHTML = px1536.toFixed(2);
-    document.getElementById("p3").innerHTML = rem1366.toFixed(2);
-    document.getElementById("p4").innerHTML = rem1536.toFixed(2);
+    document.getElementById("p1").innerHTML = px1366.toFixed(2)+"px";
+    document.getElementById("p2").innerHTML = px1536.toFixed(2)+"px";
+    document.getElementById("p3").innerHTML = rem1366.toFixed(2)+"rem";
+    document.getElementById("p4").innerHTML = rem1536.toFixed(2)+"rem";
   }
 </script>
